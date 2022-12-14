@@ -92,7 +92,7 @@
 # while
 
 # friends = ["Ron", "Kate", "Nik"]
-#friend_name = "Maksim"
+# friend_name = "Maksim"
 # 1. список
 # i = 0
 # while i < len(friends):
@@ -291,4 +291,71 @@
 # s = "ur4"
 # s += 'C'
 # print(s[-1] + s[1] + s[-4] + s[2])
+
+# Функции
+# r = range(10)
+# print(*r)
+
+# Задача №1. Пользователь вводит 3 числа. Найти минимальное из них,
+# максимальное из них, их сумму и вывести результат на экран.
+
+# numbers = []
+# for num in range(5):
+#     num = int(input(f'Введите {num + 1} число: '))
+#     numbers.append(num)
+# print(numbers)
+# # Найти минимальное из них
+# print(min(numbers))
+# # Найти максимальное из них
+# print(max(numbers))
+# # Найти их сумму
+# print(sum(numbers))
+
+# import random
+#
+# my_list = [random.randint(1, 100) for i in range(7)]
+# print(my_list)
+#
+# print(len(my_list))
+
+# Создание собственных функций
+# def print_sep(sep, sep_len):
+#     print(sep * sep_len)
+#
+# print_sep('-', 100)
+# print_sep('*', 100)
+
+# возвращаемое значение
+# def print_sep(sep, sep_len):
+#     return sep * sep_len
+#
+# sep = print_sep('-', 50)
+# text = 'Hello {} Func {}'.format(sep, sep)
+# print(text)
+
+# def print_sep(say, who):
+#     print(say, who)
+#
+# print_sep(say = 'Hello', who = 'Max')
+
+# def print_sep(who, say = 'Hello'):
+#     print(say, who)
+#
+# print_sep('Max')
+# print_sep('Max', 'Hi')
+
+# args, kwargs
+# def print_sep(say, *args):
+#     print(say, args)
+#
+# print_sep('Hi', 'Leo','Leo','Leo','Leo')
+#
+# def print_func(**kwargs):
+#     for k,v in kwargs.items():
+#         print(k, v)
+#
+# print_func(name = 'Leo', age = 20, has_car = True)
+
+
+
 

@@ -8,7 +8,7 @@ print(number)
 
 # while True: # так записывается бесконечный цикл
 #     user_number = int(input('Введите число: '))
-
+#
 #     if user_number == number:
 #         print('Пользователь победил!')
 #         break
