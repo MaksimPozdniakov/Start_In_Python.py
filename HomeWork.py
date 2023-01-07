@@ -65,18 +65,69 @@
 # Реализуйте алгоритм перемешивания списка. НЕ ИСПОЛЬЗОВАТЬ ВСТРОЕННЫЕ БИБЛИОТЕКИ SHUFFLE, максимум использование
 # библиотеки Random для и получения случайного int
 
-import random
-# size_list = int(input('Введите размер нашего списка: '))
-# my_list = [random.randint(-10, 10) for i in range(size_list)]
-my_list = [-10, -9, 4, -8, 3, -10, 9, 10, -10, -7]
-copy_list = my_list[:]
+# import random
+# # size_list = int(input('Введите размер нашего списка: '))
+# # my_list = [random.randint(-10, 10) for i in range(size_list)]
+# my_list = [-10, -9, 4, -8, 3, -10, 9, 10, -10, -7]
+# copy_list = my_list[:]
+#
+# for i in range(len(copy_list)):
+#     random_index = random.randint(0, len(copy_list) - 1)
+#     copy_list[i], copy_list[random_index] = copy_list[random_index], copy_list[i]
+#
+# print(f'Наш изначальный список: {my_list}')
+# print(f'Наш перемешанный список: {copy_list}')
 
-for i in range(len(copy_list)):
-    random_index = random.randint(0, len(copy_list) - 1)
-    copy_list[i], copy_list[random_index] = copy_list[random_index], copy_list[i]
+# 1. Реализуйте алгоритм задания случайных чисел без использования встроенного генератора псевдослучайных чисел.
 
-print(f'Наш изначальный список: {my_list}')
-print(f'Наш перемешанный список: {copy_list}')
+# import datetime
+#
+# min_n = 10
+# max_n = 100
+#
+# def get_rand():
+#     return datetime.datetime.now().microsecond%10
+#
+# n = get_rand()
+#
+# print(n)
+
+# 2. Задайте список. Напишите программу, которая определит, присутствует ли в заданном списке строк некое число.
+
+# list1 = ['2', '3', '4', '5']
+# x = (input("Введите число: "))
+#
+# for i in list1:
+#     if x == i:
+#         print(f'да, есть число {i} в списке')
+#         break
+# else:
+#     print("нет числа в списке")
+
+# 3. Напишите программу, которая определит позицию второго вхождения строки в списке либо сообщит, что её нет.
+#
+# *Пример:*
+#
+# - список: ["qwe", "asd", "zxc", "qwe", "ertqwe"], ищем: "qwe", ответ: 3
+# - список: ["йцу", "фыв", "ячс", "цук", "йцукен", "йцу"], ищем: "йцу", ответ: 5
+# - список: ["йцу", "фыв", "ячс", "цук", "йцукен"], ищем: "йцу", ответ: -1
+# - список: ["123", "234", 123, "567"], ищем: "123", ответ: -1
+# - список: [], ищем: "123", ответ: -1
+
+# my_list = []
+# my_string = input('Введите строку: ')
+# count = 0
+# for i in range(len(my_list)):
+#     if my_list[i] == my_string:
+#         count += 1
+#         if count == 2:
+#             print(i)
+#             break
+# else:
+#     print(-1)
+
+
+
 
 
 
