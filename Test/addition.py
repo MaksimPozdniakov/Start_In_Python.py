@@ -1,6 +1,3 @@
-
-
-
 def addition(first_eq: dict, second_eq: dict):
     final_eq = {}
     final_eq.update(first_eq)

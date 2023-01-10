@@ -1,6 +1,3 @@
-
-
-
 def encode(equation: str) -> dict:
     equation = equation.replace(' + ', ' ').replace(' - ', ' -')\
         .replace(' -x', ' -1*x').replace(' x', ' 1*x')\

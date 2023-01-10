@@ -1,6 +1,3 @@
-
-
-
 def decode(equation: dict) -> str:
     new_equation = []
     for key, value in equation.items():
